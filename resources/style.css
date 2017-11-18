@@ -1,6 +1,33 @@
+/*Header*/
 header{
   display: flex;
+  align-items: center;
+  width: 100%;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  justify-content:space-between;
+  padding: 10px 20px;
+  /*Border doesn't reach all the way across on left side. Ask for someone to check code to fix*/
+  border-bottom: 1px solid black;
+}
+.logo{
+  display: flex;
+  color: MediumAquamarine;
+  align-items: center;
+}
+.title{
+  padding: 0px 10px;
+}
+.navigation{
+  display: flex;
+  padding: 0px 40px;
+}
+.navigation span{
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+a{
+  color: black;
 }
