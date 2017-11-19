@@ -8,6 +8,7 @@ header{
   font-weight: bold;
   justify-content:space-between;
   padding: 10px 20px;
+  margin-bottom: 10px;
   /*Border doesn't reach all the way across on left side. Ask for someone to check code to fix*/
   border-bottom: 1px solid black;
 }
@@ -30,4 +31,29 @@ header{
 }
 a{
   color: black;
+}
+/*Main Content*/
+.container{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.column{
+  flex-direction: column;
+  border: 1px solid black;
+  justify-content: space-between;
+  margin-right: 32px;
+}
+.column.large{
+  width: 600px;
+}
+.column.medium{
+  width: 300px;
+}
+.column.small{
+  width: 240px;
+}
+div{
+  border: 1px solid black;
 }
