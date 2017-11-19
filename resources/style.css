@@ -3,31 +3,31 @@ header{
   display: flex;
   align-items: center;
   width: 100%;
+  height: 80px;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  justify-content:space-between;
-  padding: 10px 20px;
   margin-bottom: 10px;
-  /*Border doesn't reach all the way across on left side. Ask for someone to check code to fix*/
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  /*Border doesn't reach all the way across. Ask for someone to check code to fix*/
   border-bottom: 1px solid black;
 }
 .logo{
   display: flex;
+  flex-grow: 1;
   color: MediumAquamarine;
   align-items: center;
+  padding-left: 30px;
 }
-.title{
-  padding: 0px 10px;
+nav span{
+  display: inline-block;
+  padding: 20px 10px;
 }
-.navigation{
+header nav{
   display: flex;
-  padding: 0px 40px;
-}
-.navigation span{
-  display: inline-flex;
-  justify-content: space-between;
-  padding: 0px 10px;
+  padding-right: 40px;
 }
 a{
   color: black;
@@ -37,23 +37,75 @@ a{
   display: flex;
   border: 1px solid black;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 130px;
 }
 .column{
   flex-direction: column;
-  border: 1px solid black;
   justify-content: space-between;
   margin-right: 32px;
 }
-.column.large{
-  width: 600px;
+.story-main-image,
+.fall-image,
+.hipster-image,
+.cat-image{
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  color: white;
+  height: 300px;
 }
-.column.medium{
-  width: 300px;
+.story{
+  display: flex;
 }
-.column.small{
-  width: 240px;
+h2{
+  font-family: Georgia;
+  font-size: 30px;
+  color: black;
+  display: block;
+}
+p{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  display: block;
 }
 div{
   border: 1px solid black;
+}
+/*First Column*/
+.column.large{
+  width: 600px;
+  display: block;
+}
+.story-main-image{
+  background-image: url(./img-story-main.png);
+  font-size: 40px;
+}
+.fall-image{
+  background-image: url(./img-fall.png);
+  margin-top: 15px;
+  font-size: 30px;
+  justify-content: center;
+}
+.hipster-image{
+  background-image: url(./img-hipster-cameraman.png);
+  margin-top: 15px;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+}
+/*Second Column*/
+.column.medium{
+  width: 300px;
+}
+.cat-image{
+  background-image: url(./img-cat.png);
+  margin-top: 15px;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+}
+/*Third Column*/
+.column.small{
+  width: 240px;
 }
