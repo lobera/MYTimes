@@ -35,13 +35,12 @@ a{
 /*Main Content*/
 .container{
   display: flex;
-  border: 1px solid black;
   justify-content: space-between;
   padding-top: 130px;
 }
 .column{
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-right: 32px;
 }
 .story-main-image,
@@ -49,50 +48,59 @@ a{
 .hipster-image,
 .cat-image{
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Georgia;
   font-weight: bold;
   color: white;
+  text-align: center;
   height: 300px;
-}
-.story{
-  display: flex;
 }
 h2{
   font-family: Georgia;
-  font-size: 30px;
+  font-size: 25px;
   color: black;
-  display: block;
 }
 p{
   font-family: Georgia;
   font-size: 17px;
   color: black;
-  display: block;
 }
-div{
-  border: 1px solid black;
+.story{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  margin-top: 17px;
 }
 /*First Column*/
 .column.large{
-  width: 600px;
-  display: block;
+  width: 630px;
+  display: inline-block;
 }
 .story-main-image{
+  diplay: flex;
   background-image: url(./img-story-main.png);
   font-size: 40px;
+  flex-direction: column;
+}
+.story-column{
+  display: inline-block;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
 }
 .fall-image{
+  display: flex;
   background-image: url(./img-fall.png);
   margin-top: 15px;
   font-size: 30px;
-  justify-content: center;
 }
 .hipster-image{
+  display: flex;
   background-image: url(./img-hipster-cameraman.png);
   margin-top: 15px;
   font-size: 30px;
-  justify-content: center;
-  text-align: center;
 }
 /*Second Column*/
 .column.medium{
@@ -102,10 +110,57 @@ div{
   background-image: url(./img-cat.png);
   margin-top: 15px;
   font-size: 30px;
-  justify-content: center;
-  text-align: center;
 }
 /*Third Column*/
 .column.small{
   width: 240px;
+  display: block;
+  flex-direction: column;
+}
+.news-bites{
+  font-size: 16px;
+  font-weight: bold;
+}
+.news-bites .bite{
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: MediumAquaMarine;
+  padding-top: 100px;
+  margin-top: 100px;
+  height: 300px;
+  font-family: Verdana;
+  font-size: 12px;
+}
+footer nav span{
+  display: inline-block;
+  padding-left: 25px;
+}
+#links{
+  display: block;
+  font-size: 12px;
+  font-family: Verdana;
+}
+footer .title{
+  font-family: Georgia;
+  font-size: 16px;
+  border-right: 2px solid white;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  padding-right: 30px;
+}
+footer .copyright{
+  display: block;
 }
